@@ -24,8 +24,8 @@ export default class CarouselComponent extends LightningElement {
             temp.id = iterator;
             temp.contentId = 'content-id-' + iterator;
             temp.indicatorId = 'indicator-id-' + iterator;
-            if(temp.href){
-                temp.href='javascript:void(0);';
+            if (temp.href) {
+                temp.href = 'javascript:void(0);';
             }
             if (iterator === this.activeComponent) {
                 temp.hidden = false;
@@ -46,11 +46,11 @@ export default class CarouselComponent extends LightningElement {
         this.components = untrackedComponents;
     }
 
-    togglePlay(){
-        if(!this.showPlayIcon){
+    togglePlay() {
+        if (!this.showPlayIcon) {
             clearInterval(this.intervalVar);
             this.showPlayIcon = true;
-        }else{
+        } else {
             this.checkOptions();
         }
     }
@@ -76,7 +76,7 @@ export default class CarouselComponent extends LightningElement {
         if (!this.loaded) {
             this.arrangeComponents();
             this.checkOptions();
-            clearInterval(this.intervalVar);
+            //clearInterval(this.intervalVar);//if default auto play is not needed then uncomment this line
             this.loaded = true;
         }
     }

@@ -40,7 +40,7 @@ export default class CarouselDemo extends LightningElement {
             header: 'Landscape 8',
             description: 'Demo image for carousel.',
         }, {
-            video: 'https://www.youtube.com/watch?v=z2tYZmsO2eE',
+            video: 'https://www.youtube.com/embed/9YffrCViTVk',
             header: 'Landscape 9',
             description: 'Demo video for carousel.',
         }
