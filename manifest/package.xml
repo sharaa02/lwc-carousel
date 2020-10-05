@@ -3,6 +3,7 @@
     <types>
         <members>carouselComponent</members>
         <members>carouselDemo</members>
+        <members>carouselWithOnlyJS</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>48.0</version>
